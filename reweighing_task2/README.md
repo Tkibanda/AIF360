@@ -14,7 +14,7 @@ Tested with Python 3.12.
 
 1. Clone this repository and go to this folder:
    ```
-      git clone https://github.com/Tkibanda/AIF360.git
+   git clone https://github.com/Tkibanda/AIF360.git
    cd AIF360/reweighing_task2
    ```
 2. Create a virtual environment and install the packages:
