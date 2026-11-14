@@ -12,7 +12,7 @@ It evaluates AIF360's `Reweighing` pre-processing algorithm on three datasets, u
 
 ## Exact steps to reproduce
 
-Tested with Python 3.12.
+Results below come from a run in Google Colab with the original UCI and ProPublica files. Also tested locally with Python 3.12.
 
 1. Clone this repository and go to this folder:
    ```
@@ -31,7 +31,7 @@ Tested with Python 3.12.
    ```
 4. Run all cells (**Kernel → Restart & Run All**). It takes a few minutes, mostly on Adult.
 
-**Google Colab instead:** upload the notebook, uncomment `!pip install aif360` in the first cell, then **Runtime → Run all**.
+**Google Colab instead:** upload the notebook and choose **Runtime → Run all**; the first cell installs AIF360 (`!pip install aif360`).
 
 ## Data
 
@@ -61,17 +61,17 @@ If a download fails, download the files by hand and place them in the folder the
 
 | Dataset | Model | DP_Diff | DIR | Consistency | Accuracy |
 |---|---|---|---|---|---|
-| Adult | LogReg baseline | −0.185 | 0.303 | 0.944 | 0.845 |
-| Adult | LogReg + Reweighing | −0.102 | 0.549 | 0.945 | 0.842 |
-| Adult | Tree baseline | −0.176 | 0.329 | 0.903 | 0.847 |
-| Adult | Tree + Reweighing | −0.105 | 0.560 | 0.900 | 0.841 |
+| Adult | LogReg baseline | −0.181 | 0.305 | 0.944 | 0.847 |
+| Adult | LogReg + Reweighing | −0.096 | 0.567 | 0.946 | 0.842 |
+| Adult | Tree baseline | −0.172 | 0.334 | 0.903 | 0.848 |
+| Adult | Tree + Reweighing | −0.104 | 0.563 | 0.899 | 0.841 |
 | German | LogReg baseline | −0.136 | 0.824 | 0.814 | 0.749 |
 | German | LogReg + Reweighing | −0.098 | 0.874 | 0.812 | 0.750 |
 | German | Tree baseline | −0.076 | 0.905 | 0.762 | 0.721 |
 | German | Tree + Reweighing | −0.075 | 0.902 | 0.757 | 0.717 |
 | COMPAS | LogReg baseline | −0.144 | 0.795 | 0.858 | 0.667 |
 | COMPAS | LogReg + Reweighing | −0.132 | 0.812 | 0.859 | 0.668 |
-| COMPAS | Tree baseline | −0.146 | 0.791 | 0.753 | 0.658 |
+| COMPAS | Tree baseline | −0.146 | 0.791 | 0.754 | 0.658 |
 | COMPAS | Tree + Reweighing | −0.142 | 0.793 | 0.751 | 0.649 |
 
 ## Notes
